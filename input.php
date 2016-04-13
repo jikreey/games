@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect('localhost','dzikriid','ALFArob1','dzikriid_myDB');
+$connect = mysqli_connect('localhost','root','','myDB');
 if(!$connect){ die("Gagal akses database");}
 	
 	$katabaru = $_POST['katabaru'];
