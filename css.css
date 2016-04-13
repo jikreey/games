@@ -1,0 +1,50 @@
+body {
+	background:#456;	
+	font-family:'Open Sans',sans-serif;
+	font-size:20px;}
+
+.games {
+	width:400px;
+	margin: 150px auto;
+	font-size:20px;}
+
+.games-header, .games p { 
+	margin-top:0; margin-bottom:0;}
+	
+.games-header {
+	background:#28d;
+	color:#fff;
+	padding:20px;
+	text-align:center;
+	font-size: 1.4em;
+	font-weight: normal;}
+	
+.games-container {
+	background:#ebebeb;
+	padding:12px;}
+	
+.games p {
+	padding:12px;}
+	
+.games input {
+	padding:20px;
+	width:100%;
+	border:1px solid;
+	display:block;
+	box-sizing:border-box;
+	font-family:inherit;
+	font-size: 20px;}
+
+.games input[type="text"], .login input[type="password"] {
+	background: #fff;
+	border-color: #bbb;
+	color: #555;
+}
+
+.games input[type="submit"] {
+	color:#fff;
+	background:#28d;
+	border:transparent;}
+	
+.games input[type="submit"]:hover {
+	background:#17c;}	
