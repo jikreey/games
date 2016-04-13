@@ -39,7 +39,7 @@ body {
 
 </tr>
 <?php
-	$connect = mysqli_connect('localhost','dzikriid','ALFArob1','dzikriid_myDB');
+	$connect = mysqli_connect('localhost','root','','myDB');
 	if(!$connect){ die("gagal connect database!"); }
 	$data = "SELECT * FROM games";
 	$result = mysqli_query($connect,$data); 
