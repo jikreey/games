@@ -8,7 +8,11 @@
 $connect = mysqli_connect('localhost','root','','myDB');
 if(!$connect){ die("Gagal akses database");}
 
-$urutan = (rand(1,10));
+$last = mysqli_query($connect,"SELECT MAX(ID) from games");
+$lastid = mysqli_fetch_array($last);
+$id = $lastid[0];
+
+$urutan = (rand(1,$id));
 $kata = "SELECT katabaru from games WHERE ID=$urutan";
 $sql = mysqli_query($connect,$kata);
 $value = mysqli_fetch_array($sql);
